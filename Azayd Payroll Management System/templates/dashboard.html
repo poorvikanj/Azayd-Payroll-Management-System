@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h2>Welcome, {{ username }} ({{ role }})</h2>{% if role == 'Admin' %}<a href="{{ url_for('register') }}" class="btn btn-primary">Manage Users</a>{% endif %}<a href="{{ url_for('payroll') }}" class="btn btn-secondary">Manage Payroll</a><a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>{% endblock %}
